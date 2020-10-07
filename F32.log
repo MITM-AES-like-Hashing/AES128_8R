@@ -1,0 +1,161 @@
+Start precompute the Blue cells (neutral bytes for forward) in state k4 and #SB4.
+Finish with complexity 2^32
+Precompute neutral bytes for forward  takes 15.5482 (mins)
+
+Start precompute the Red cells (neutral bytes for Backward) in state #MC5.
+Finish with complexity 2^24
+Precompute neutral bytes for backward takes 0.0526667 (mins)
+
+Find match on 32 bits.
+Complexity (Total Forward ) is 2^24.3906
+Complexity (Total Backward) is 2^24.3711
+Complexity (After matched through MixColumns) is 2^24.3907
+Complexity (Total) is 2^25.3858
+Find match on 32 bits takes 0.546833 (mins)
+
+==== Backward computation ====
+#SB4 = 
+0f  76  52  bb  
+29  29  b0  52  
+52  a2  27  8e  
+57  52  a0  08  
+
+k3 = 
+15  b7  8b  66  
+0d  9e  86  44  
+0d  c2  2a  22  
+17  75  8b  2a  
+
+#AK3 = 
+1a  c1  d9  dd  
+24  b7  36  16  
+5f  60  0d  ac  
+40  27  2b  22  
+
+#MC3 = 
+5b  3d  ba  d4  
+6b  d6  ef  f2  
+5c  fe  e7  2f  
+4d  24  7b  4c  
+
+k2 = 
+38  a2  3c  ed  
+3d  93  18  c2  
+3f  cf  e8  08  
+42  62  fe  a1  
+
+#MC2 = 
+a0  4b  25  f4  
+d9  d8  e5  32  
+3a  5d  12  31  
+7e  91  90  60  
+
+invMixColumns(#SB2) = 
+b5  4e  f3  1e  
+78  ca  85  8a  
+2d  95  32  1c  
+93  80  99  1f  
+
+==== Forward computation ====
+#SB4 = 
+0f  76  52  bb  
+29  29  b0  52  
+52  a2  27  8e  
+57  52  a0  08  
+
+k4 = 
+1e  a9  22  44  
+9e  00  86  c2  
+e8  2a  00  22  
+24  51  da  f0  
+
+#SB5 = 
+fa  a9  22  a5  
+c6  9d  86  d7  
+e8  2a  00  22  
+b7  51  da  91  
+
+k5 = 
+1b  b2  90  d4  
+0d  0d  8b  49  
+64  4e  4e  6c  
+3f  6e  b4  44  
+
+#SB6 = 
+41  f9  f5  ad  
+b8  51  63  5f  
+49  04  96  f6  
+6c  9e  36  b1  
+
+k6 = 
+60  d2  42  96  
+5d  50  db  92  
+7f  31  7f  13  
+77  19  ad  e9  
+
+#SB7 = 
+4d  ff  ef  e4  
+04  b2  fe  d7  
+55  27  3d  1a  
+23  b0  7e  d9  
+
+k7 = 
+af  7d  3f  a9  
+20  70  ab  39  
+61  50  2f  3c  
+e7  fe  53  ba  
+
+#AT = 
+4c  6b  e0  c0  
+17  cb  a5  cb  
+46  f2  d3  f0  
+d2  d8  b4  49  
+
+Target = 
+00  00  00  00  
+00  00  00  00  
+00  00  00  00  
+00  00  00  00  
+
+#AK_-1 = 
+4c  6b  e0  c0  
+17  cb  a5  cb  
+46  f2  d3  f0  
+d2  d8  b4  49  
+
+k_-1 = 
+2b  49  f5  4b  
+d0  68  57  74  
+0c  de  d7  10  
+4b  a4  e0  7f  
+
+#SB0 = 
+67  22  15  8b  
+c7  a3  f2  bf  
+4a  2c  04  e0  
+99  7c  54  36  
+
+k0 = 
+b8  f1  04  4f  
+1a  72  25  51  
+de  00  d7  c7  
+f8  5c  bc  c3  
+
+#SB1 = 
+40  43  68  35  
+83  3e  1d  48  
+a1  ea  01  be  
+9e  5d  a9  73  
+
+invMixColumns(k1) = 
+bc  c4  cf  60  
+ca  99  3d  ef  
+51  7d  31  22  
+1c  c4  6d  19  
+
+#MC1 ⊕ invMixColumns(k1) = 
+b5  de  8a  f6  
+78  3d  6f  03  
+2d  d3  03  a5  
+93  cf  21  ca  
+
